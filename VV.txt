@@ -1,0 +1,20 @@
+CREATE SCHEMA `bank` ;
+CREATE TABLE `bank`.`login` (
+  `id` INT NOT NULL,
+  `cardno` BIGINT(20) NOT NULL,
+  `pin` INT NOT NULL,
+  PRIMARY KEY (`id`));
+INSERT INTO `bank`.`login` (`id`, `cardno`, `pin`) VALUES ('1234', '9822857121', '8950');
+CREATE TABLE `bank`.`signup` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(20) NOT NULL,
+  `fathername` VARCHAR(20) NOT NULL,
+  `dob` VARCHAR(50) NOT NULL,
+  `gender` VARCHAR(20) NOT NULL,
+  `email` VARCHAR(30) NOT NULL,
+  `marital` VARCHAR(20) NOT NULL,
+  `address` VARCHAR(45) NOT NULL,
+  `city` VARCHAR(45) NOT NULL,
+  `pincode` VARCHAR(20) NOT NULL,
+  `state` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`id`));
